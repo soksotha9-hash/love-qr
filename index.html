@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love QR Code</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ff4d6d, #ff8fab, #ffc2d1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 24px;
+      padding: 40px 30px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.18);
+      color: white;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      margin-bottom: 25px;
+      opacity: 0.95;
+    }
+
+    .heart {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      animation: pulse 1.5s infinite;
+    }
+
+    .qr-box {
+      background: white;
+      padding: 14px;
+      border-radius: 20px;
+      display: inline-block;
+      margin: 20px 0;
+    }
+
+    .qr-box img {
+      width: 230px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .message {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-top: 15px;
+      color: #fff;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .qr-box img {
+        width: 190px;
+        height: 190px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>I Love You</h1>
+    <p class="subtitle">Scan the QR code for a special surprise</p>
+
+    <div class="qr-box">
+      <!-- Replace qr-code.png with your real QR code image -->
+      <img src="qr-code.png" alt="Love QR Code">
+    </div>
+
+    <p class="message">
+      Happy Anniversary My Love 💕<br>
+      3 Beautiful Years Together
+    </p>
+
+    <div class="footer">
+      Made with love forever 💖
+    </div>
+  </div>
+</body>
+</html>
