@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Surprise ❤️</title>
+
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Arial;
+background:linear-gradient(135deg,#ff5f8f,#ff8fb1,#ffc3d6);
+color:white;
+text-align:center;
+}
+
+.card{
+background:rgba(255,255,255,0.15);
+padding:40px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+width:320px;
+}
+
+h1{
+margin-top:10px;
+}
+
+button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:white;
+color:#ff4d6d;
+font-size:16px;
+cursor:pointer;
+}
+
+#message{
+display:none;
+margin-top:20px;
+font-size:20px;
+}
+
+.qr{
+margin-top:25px;
+background:white;
+padding:10px;
+border-radius:15px;
+display:inline-block;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div style="font-size:40px">❤️</div>
+
+<h1>I Love You</h1>
+
+<p>Tap below to reveal your surprise</p>
+
+<button onclick="show()">Reveal Surprise</button>
+
+<div id="message">
+💌 Happy Anniversary My Love<br>
+3 Beautiful Years Together<br>
+Forever With You ❤️
+</div>
+
+<div class="qr">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://yourusername.github.io/love-qr">
+</div>
+
+</div>
+
+<script>
+function show(){
+document.getElementById("message").style.display="block";
+}
+</script>
+
+</body>
+</ht
